@@ -1,0 +1,71 @@
+.header{
+    height: 40vw;
+    width: 90%;
+    margin:30px auto;
+    background: url('../../assets/background.png') no-repeat;
+    /* background-size: contain; */
+    background-size: cover;
+    background-color: rgb(2, 2, 2);
+    border-radius: 25px;
+    
+    position: relative;
+}
+.header-contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 3.5vw;
+    max-width: 40%;
+    bottom: 20%;
+    left: 6vw;
+    animation: fadeIn 3s;
+}
+.header-contents h2{
+    font-weight: 500;
+    color: rgb(158, 71, 71);
+    font-size: max(4.5vw,22px);
+}
+.header-contents p{
+    color: rgb(60, 57, 57);
+    font-size: 2.3vw;
+}
+.header-contents button{
+    border:none;
+    
+    color: #ffe8e8;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: rgb(128, 81, 81);
+    font-size: max(1vw,13px);
+    border-radius: 50px;
+    cursor: pointer;
+    
+}
+.header-contents button {
+    border-color: #f68479;
+    color: rgb(223, 214, 214);
+  }
+  
+  .header-contents button:hover {
+    background: #f44336;
+    color: white;
+  }
+@media (max-width:1050px) {
+
+    .header-contents{
+        max-width: 45%;
+    }
+}
+@media (max-width:750px) {
+
+    .header-contents{
+        max-width: 65%;
+    }
+    .header-contents p{
+        display: none;
+    }
+    .header-contents button{
+        padding: 2vw 4vw;
+    }
+}

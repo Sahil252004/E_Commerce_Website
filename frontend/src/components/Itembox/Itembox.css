@@ -1,0 +1,16 @@
+.item-container{
+    width: 80%;
+    margin: 80px auto;
+
+}
+.item-container h1{
+    text-align: center;
+    color: brown;
+}
+.product-category-wrap{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
+    margin-top: 30px;
+    gap: 30px;
+    row-gap: 50px;
+}

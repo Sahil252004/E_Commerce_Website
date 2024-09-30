@@ -1,0 +1,30 @@
+.card-container {
+    display: grid;
+    padding: 50px 150px;
+    grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+    margin-top: 30px;
+    gap: 50px;
+    row-gap: 50px;
+    justify-content: space-evenly;
+  }
+  .heading{
+    
+        text-align: center; /* Centers the text horizontally */
+        margin-top: 50px; /* Adds 50px space from the top */
+      
+      
+  }
+  .card-container .card {
+    flex: 1; /* Let the cards take up equal space */
+    max-width: 48%; /* Ensure the two cards fit within the container with a small margin */
+    margin-bottom: 20px; /* Add spacing between rows if more than two cards */
+    height: 180px;
+    
+  }
+
+  .card img {
+    width: 100%; /* Make sure the image takes up the full width of its column */
+    height: 178px;
+    object-fit: contain;
+    cursor: pointer;
+  }
